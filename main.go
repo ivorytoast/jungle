@@ -12,7 +12,7 @@ func main() {
 		return c.String(http.StatusOK, "Hello, World!")
 	})
 	e.GET("/healthz", func(c echo.Context) error {
-		return c.String(http.StatusOK, "UP!")
+		return c.String(http.StatusOK, "UP FROM GITHUB!")
 	})
 	e.Logger.Fatal(e.Start(":7500"))
 }
